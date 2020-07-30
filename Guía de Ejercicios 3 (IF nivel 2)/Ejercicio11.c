@@ -24,51 +24,37 @@ int main()
         {
             if(num2 < num3)
             {
-                printf("%i %i %i", num1, num2, num3);
+                printf("OPCION 1 %i %i %i", num1, num2, num3);
             }
             else
             {
-                printf("%i %i %i", num1, num3, num2);
+                printf("OPCION 2 %i %i %i", num1, num3, num2);
             }
         }
         else
         {
-            if(num3 < num2)
-            {
-                printf("%i %i %i", num3, num1, num2);
-            }
-            else
-            {
-                printf("%i %i %i", num2, num3, num1);
-            }
+                printf("OPCION 3 %i %i %i", num3, num1, num2);
         }
     }
     else
     {
         if(num2 < num3)
         {
-            if(num3 < num1)
+            if(num1 < num3)
             {
-                printf("%i %i %i", num2, num3, num1);
+                printf("OPCION 4 %i %i %i", num2, num1, num3);
             }
             else
             {
-                printf("%i %i %i", num1, num3, num2);
+                printf("OPCION 5 %i %i %i", num2, num3, num1);
             }
         }
         else
         {
-            if(num2 < num1)
-            {
-                printf("%i %i %i", num3, num1, num2);
-            }
-            else
-            {
-                printf("%i %i %i", num3, num2, num1);
-            }
+                printf("OPCION 6 %i %i %i", num3, num2, num1);
         }
-
     }
+
 
     return 0;
 }
