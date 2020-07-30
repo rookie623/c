@@ -1,0 +1,4 @@
+/*
+    9. Realizar el nuevamente el ejercicio 8 pero ahora debe devolver además la
+    posición en la que fue encontrado cada uno de los mínimos.
+*/

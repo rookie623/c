@@ -1,0 +1,4 @@
+/*
+    4. Hacer un programa que solicite dos números y luego muestre los números
+    entre el menor y el mayor de ellos. Acordate, usando While.
+*/
