@@ -11,17 +11,23 @@ int main()
     int i;
     int min;
 
-    min = num++; //revisar validez de esto
-
     for(i = 1; i < 21; i++)
     {
         printf("Ingrese un numero: ");
         scanf("%i", &num);
 
-        if(num < min)
+        if(i == 1)
         {
             min = num;
             pos = i;
+        }
+        else
+        {
+            if(num < min)
+            {
+                min = num;
+                pos = i;
+            }
         }
     }
 

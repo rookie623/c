@@ -16,10 +16,18 @@ int main()
         printf("Ingrese un numero: ");
         scanf("%i", &num);
 
-        if(num > max)
+        if(i == 1)
         {
             max = num;
             pos = i;
+        }
+        else
+        {
+            if(num > max)
+            {
+                max = num;
+                pos = i;
+            }
         }
     }
 
