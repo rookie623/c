@@ -1,5 +1,60 @@
 /*
-    10. Hacer un programa que solicite una lista de números que corta cuando se
-    ingresa un cero y luego emitir por pantalla el máximo de los números
-    negativos y el mínimo de los números positivos.
+    10. Hacer un programa que solicite una lista de nï¿½meros que corta cuando se
+    ingresa un cero y luego emitir por pantalla el mï¿½ximo de los nï¿½meros
+    negativos y el mï¿½nimo de los nï¿½meros positivos.
 */
+#include <stdio.h>
+
+int main()
+{
+    int num;
+    int maxNegative, minPositive;
+    int i = 0;
+    int flagPost = 0;
+    int flagNegt = 0;
+
+    while (num != 0)
+    {
+        printf("Ingrese un numero: ");
+        scanf("%i", &num);
+        
+        if(num != 0)
+        {
+            if(num < 0)
+            {
+                if(!flagNegt)
+                {
+                    maxNegative = num;
+                    flagNegt = 1;
+                }
+                else
+                {
+                    if (num < maxNegative)
+                    {
+                        maxNegative = num;
+                    }
+                }
+            }
+            else
+            {
+                if(!flagPost)
+                {
+                    minPositive = num;
+                    flagPost = 1;
+                }
+                else
+                {
+                    if (num < minPositive)
+                    {
+                        minPositive = num;
+                    }   
+                }
+            }
+        }
+    }
+
+    printf("Este es el maximo de los numeros negativos: %i\nEste es el minimo de los numeros positivos: %i\n", maxNegative, minPositive);
+    
+
+    return 0;
+}
